@@ -1,0 +1,1 @@
+add_library(externType extern_type.cpp extern_type.h)

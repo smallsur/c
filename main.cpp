@@ -1,11 +1,16 @@
 #include <iostream>
+using namespace std;
+
+
 
 int add(const int x, const int y){
     return x + y;
 }
+
+
 int main(){
 
-    add(10,23);
-    
+    int z = add(10,23);
+    cout << z << endl;
     return 0;
 }
