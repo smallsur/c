@@ -1,4 +1,5 @@
 #include <iostream>
+#include "extern_type.h"
 using namespace std;
 
 void print_sizeof_type(){
@@ -39,9 +40,16 @@ void define_type(){
 
     int c(l), d = l;
 }
+//int ex_value = 10;
+void const_type(){
+    const int i = 10;
+//    int &j = i;
+}
 
 int main(){
     print_sizeof_type();
     define_type();
+//    ex_value = 20 ;
+    cout<<ex_value;
     return 0;
 }
