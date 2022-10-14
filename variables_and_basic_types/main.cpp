@@ -41,6 +41,7 @@ void define_type(){
 }
 
 int main(){
-
+    print_sizeof_type();
+    define_type();
     return 0;
 }

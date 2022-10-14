@@ -1,7 +1,8 @@
-launch.json
 
 build/
 
 cmake-build-debug-visual-studio/
-
+cmake-build-debug-default/
 .idea/
+
+
