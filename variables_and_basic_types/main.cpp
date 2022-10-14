@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "extern_type.h"
 using namespace std;
 
@@ -45,11 +46,29 @@ void const_type(){
     const int i = 10;
 //    int &j = i;
 }
+constexpr int compute_(int n){
+    if(n==1 || n==0){
+        return 1;
+    }
+    return compute_(n-1)+ compute_(n-2);
+}
 
+void get_(){
+    string world;
+    while(cin>>world){
+        cout<<world<<endl;
+    }
+}
+void getLine_(){
+    string world;
+    while(getline(cin,world)){
+        cout<<world<<endl;
+    }
+}
 int main(){
-    print_sizeof_type();
-    define_type();
-//    ex_value = 20 ;
-    cout<<ex_value;
+
+    int i = 10, *c = &i;
+    char* v = reinterpret_cast<char*>(c);
+    cout<< strnlen_s(v,100)<<endl;
     return 0;
 }
