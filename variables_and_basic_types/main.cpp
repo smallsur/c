@@ -65,10 +65,23 @@ void getLine_(){
         cout<<world<<endl;
     }
 }
+void print_(const int *p, const int *q){
+    while(p!=q){
+        cout<<*p<<endl;
+        p++;
+    }
+}
+void print__(initializer_list<string> s){
+//    for (auto k: s) {
+//        cout<<k<<endl;
+//    }
+    for (auto begin = s.begin();  begin!=s.end() ; begin++) {
+        cout<<*begin<<endl;
+    }
+}
+
 int main(){
 
-    int i = 10, *c = &i;
-    char* v = reinterpret_cast<char*>(c);
-    cout<< strnlen_s(v,100)<<endl;
+    print__({"qwe","wqewe","qwef","werwe"});
     return 0;
 }
