@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cstring>
 #include "extern_type.h"
 using namespace std;
 
@@ -65,6 +66,7 @@ void getLine_(){
         cout<<world<<endl;
     }
 }
+
 void print_(const int *p, const int *q){
     while(p!=q){
         cout<<*p<<endl;
@@ -80,8 +82,18 @@ void print__(initializer_list<string> s){
     }
 }
 
-int main(){
 
-    print__({"qwe","wqewe","qwef","werwe"});
+
+void wangGuoWei(){
+    cout<<"\t《蝶恋花·阅尽天涯离别苦》\t"<<endl;
+    cout<<"\t--王国维\t"<<endl;
+    cout<<"\t阅尽天涯离别苦，不道归来，零落花如许。\t"<<endl;
+    cout<<"\t花底相看无一语，绿窗春与天俱暮。\t"<<endl;
+    cout<<"\t待把相思灯下诉，一缕新欢，旧恨千千缕。\t"<<endl;
+    cout<<"\t最是人间留不住，朱颜辞镜花辞树。\t"<<endl;
+}
+int main(){
+    wangGuoWei();
+
     return 0;
 }
