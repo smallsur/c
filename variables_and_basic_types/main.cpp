@@ -92,8 +92,17 @@ void wangGuoWei(){
     cout<<"\t待把相思灯下诉，一缕新欢，旧恨千千缕。\t"<<endl;
     cout<<"\t最是人间留不住，朱颜辞镜花辞树。\t"<<endl;
 }
-int main(){
-    wangGuoWei();
 
+void  (*decorator(void (*fun)()))(){
+    cout<<"decorator"<<endl;
+    fun();
+    return fun;
+}
+
+int main(){
+//    void (*fun)() = wangGuoWei;
+//    decorator(fun);
+    void (*fun)()  = decorator(wangGuoWei);
+    fun();
     return 0;
 }
