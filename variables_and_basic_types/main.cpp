@@ -1,7 +1,8 @@
-#include <iostream>
+﻿#include <iostream>
 #include <string>
 #include <cstring>
 #include "extern_type.h"
+#include "Sales_data.h"
 using namespace std;
 
 void print_sizeof_type(){
@@ -102,7 +103,13 @@ void  (*decorator(void (*fun)()))(){
 int main(){
 //    void (*fun)() = wangGuoWei;
 //    decorator(fun);
-    void (*fun)()  = decorator(wangGuoWei);
-    fun();
+//    void (*fun)()  = decorator(wangGuoWei);
+//    fun();
+    string s = "qwefr";
+    Sales_data data(s);
+//    delete s;
+    cout<<data.bookNo<<endl;
+    s[3]='y';
+    cout<<data.bookNo<<endl;
     return 0;
 }
