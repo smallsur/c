@@ -3,6 +3,8 @@
 #include <cstring>
 #include "extern_type.h"
 #include "Sales_data.h"
+#include "Window_mgr.h"
+#include "Screen.h"
 using namespace std;
 
 void print_sizeof_type(){
@@ -105,9 +107,11 @@ int main(){
 //    decorator(fun);
 //    void (*fun)()  = decorator(wangGuoWei);
 //    fun();
-    string s = "qwefr";
-    Sales_data data(s);
-//    delete s;
-    print(cout, data);
+//    string s = "qwefr";
+//    Sales_data data(s);
+////    delete s;
+//    print(cout, data);
+    Screen screen(2,3,'a');
+    cout << screen.display(cout).get();
     return 0;
 }
