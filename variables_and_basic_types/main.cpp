@@ -108,8 +108,6 @@ int main(){
     string s = "qwefr";
     Sales_data data(s);
 //    delete s;
-    cout<<data.bookNo<<endl;
-    s[3]='y';
-    cout<<data.bookNo<<endl;
+    print(cout, data);
     return 0;
 }

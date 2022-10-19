@@ -35,3 +35,7 @@ Sales_data add(const Sales_data& data1_, const Sales_data& data2_){
     s = s.combine(data2_);
     return s;
 }
+
+Sales_data::Sales_data(std::istream & is) {
+    read(is,*this);
+}
