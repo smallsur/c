@@ -3,6 +3,8 @@ project(c LANGUAGES CXX)
 
 add_subdirectory(variables_and_basic_types)
 add_subdirectory(class_lib)
+add_subdirectory(operation_system)
+
 
 set(CMAKE_CXX_STANDARD 17) # specify the C++ standard
 set(CMAKE_CXX_STANDARD_REQUIRED True)
